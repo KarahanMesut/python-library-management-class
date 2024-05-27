@@ -107,7 +107,7 @@ Run the Python script / Python betiğini çalıştırın
 python demo-library.py
 
 
-Contributing / Katkıda Bulunma
+## Contributing / Katkıda Bulunma
 If you would like to contribute, please open an issue or send a pull request.
 
 Katkıda bulunmak isterseniz, lütfen bir issue açın veya bir pull request gönderin.
