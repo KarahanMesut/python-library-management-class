@@ -19,14 +19,18 @@ Bu proje, Python programlama dili kullanılarak oluşturulmuş basit bir Kütüp
 ### Book
 Stores information for each book:
 - `name`
-- `author`
+- `writer`
 - `isbn`
+- `type`
+- `publicationYear`
 - `is_borrowed` (flag indicating if the book is borrowed)
 
 Her bir kitap için şu bilgileri saklar:
 - `name` (başlık)
-- `author` (yazar)
+- `writer` (yazar)
 - `isbn` (ISBN numarası)
+- - `type` (Kitap Türü)
+- `publicationYear`(Yayın Yılı)
 - `is_borrowed` (ödünç alınıp alınmadığını belirten bayrak)
 
 ### Member
