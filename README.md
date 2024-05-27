@@ -55,12 +55,12 @@ Kütüphane için şu bilgileri saklar ve yönetir:
 
 ```python
 # Create a library / Kütüphane oluşturma
-library = Library("City Library")
+library=Library("Şehir Kütüphanesi")
 
 # Create some books / Kitap oluşturma
-book1 = Book("1984", "George Orwell", "1234567890")
-book2 = Book("To Kill a Mockingbird", "Harper Lee", "1234567891")
-book3 = Book("The Great Gatsby", "F. Scott Fitzgerald", "1234567892")
+book1=Book('Ölüler Diyarı','Polisiye Roman','Jean-Christophe Grangé','2018','123456789')
+book2=Book('İhanet Noktası','Gerilim , Sürükleyici , Bilim Kurgu','Dan Brown','2001','123456789')
+book3=Book('Inferno','Gizem Sürükleyici, Gerilim','Dan Brown','2016','123456789')
 
 # Add books to the library / Kitapları kütüphaneye ekleme
 library.add_book(book1)
@@ -68,8 +68,8 @@ library.add_book(book2)
 library.add_book(book3)
 
 # Create some members / Üye oluşturma
-member1 = Member("Alice", "M001")
-member2 = Member("Bob", "M002")
+member1 = Members("Mesut", "M001")
+member2 = Members("Özge", "M002")
 
 # Add members to the library / Üyeleri kütüphaneye ekleme
 library.add_member(member1)
@@ -84,15 +84,16 @@ member2.return_book(book2)
 member1.borrow_book(book3)
 
 # List all books in the library / Kütüphanedeki tüm kitapları listeleme
-print("\nAll books in the library / Kütüphanedeki tüm kitaplar:")
+print("\nTüm Kitaplar Listesi:")
 for book in library.list_books():
     print(book)
 
 # List all members in the library / Kütüphanedeki tüm üyeleri listeleme
-print("\nAll members in the library / Kütüphanedeki tüm üyeler:")
+print("\nKütüphanedeki tüm üyeler:")
 for member in library.list_members():
-    print(member)
+    print(member)    
 
+```
 
 Installation and Running / Kurulum ve Çalıştırma
 Clone the repository / Depoyu klonlayın
