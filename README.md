@@ -1,58 +1,59 @@
-Students' Simple Python Library Management System / Öğrenciler İçin Basit Python Kütüphane Yönetim Sistemi
+### Students' Simple Python Library Management System / Öğrenciler İçin Basit Python Kütüphane Yönetim Sistemi
+
 This project is a simple Library Management System created using the Python programming language. It allows for the management of books and members. Members can borrow and return books. The system tracks the current status of books and which member has borrowed which book.
 
 Bu proje, Python programlama dili kullanılarak oluşturulmuş basit bir Kütüphane Yönetim Sistemi'dir. Kitapların ve üyelerin yönetimini sağlar. Üyeler kitap ödünç alabilir ve geri verebilir. Sistem, kitapların mevcut durumunu ve hangi üyenin hangi kitabı ödünç aldığını takip eder.
 
-Features / Özellikler
-Book Management: Add and list books.
+## Features / Özellikler
 
-Member Management: Add and list members.
+- **Book Management**: Add and list books.
+- **Member Management**: Add and list members.
+- **Borrowing and Returning**: Members can borrow and return books.
 
-Borrowing and Returning: Members can borrow and return books.
+- **Kitap Yönetimi**: Kitap ekleme, listeleme.
+- **Üye Yönetimi**: Üye ekleme, listeleme.
+- **Ödünç Alma ve Geri Verme**: Üyelerin kitap ödünç alabilmesi ve geri verebilmesi.
 
-Kitap Yönetimi: Kitap ekleme, listeleme.
+## Classes Used / Kullanılan Sınıflar
 
-Üye Yönetimi: Üye ekleme, listeleme.
-
-Ödünç Alma ve Geri Verme: Üyelerin kitap ödünç alabilmesi ve geri verebilmesi.
-
-Classes Used / Kullanılan Sınıflar
-Book
+### Book
 Stores information for each book:
+- `title`
+- `author`
+- `isbn`
+- `is_borrowed` (flag indicating if the book is borrowed)
 
-title
-author
-isbn
-is_borrowed (flag indicating if the book is borrowed)
 Her bir kitap için şu bilgileri saklar:
+- `title` (başlık)
+- `author` (yazar)
+- `isbn` (ISBN numarası)
+- `is_borrowed` (ödünç alınıp alınmadığını belirten bayrak)
 
-title (başlık)
-author (yazar)
-isbn (ISBN numarası)
-is_borrowed (ödünç alınıp alınmadığını belirten bayrak)
-Member
+### Member
 Stores information for each member:
+- `name`
+- `member_id`
+- `borrowed_books` (list of borrowed books)
 
-name
-member_id
-borrowed_books (list of borrowed books)
 Her bir üye için şu bilgileri saklar:
+- `name` (isim)
+- `member_id` (üye numarası)
+- `borrowed_books` (ödünç alınan kitapların listesi)
 
-name (isim)
-member_id (üye numarası)
-borrowed_books (ödünç alınan kitapların listesi)
-Library
+### Library
 Stores and manages information for the library:
+- `name`
+- `books` (list of books)
+- `members` (list of members)
 
-name
-books (list of books)
-members (list of members)
 Kütüphane için şu bilgileri saklar ve yönetir:
+- `name` (isim)
+- `books` (kitapların listesi)
+- `members` (üyelerin listesi)
 
-name (isim)
-books (kitapların listesi)
-members (üyelerin listesi)
+## Example Usage / Örnek Kullanım
 
+```python
 # Create a library / Kütüphane oluşturma
 library = Library("City Library")
 
@@ -91,6 +92,7 @@ for book in library.list_books():
 print("\nAll members in the library / Kütüphanedeki tüm üyeler:")
 for member in library.list_members():
     print(member)
+
 
 Installation and Running / Kurulum ve Çalıştırma
 Clone the repository / Depoyu klonlayın
