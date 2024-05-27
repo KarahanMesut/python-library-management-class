@@ -95,15 +95,15 @@ for member in library.list_members():
 
 ```
 
-Installation and Running / Kurulum ve Çalıştırma
+## Installation and Running / Kurulum ve Çalıştırma
 Clone the repository / Depoyu klonlayın
 
 git clone https://github.com/KarahanMesut/python-library-management-class.git
 
-Navigate to the project directory / Proje dizinine gidin:
+## Navigate to the project directory / Proje dizinine gidin:
 cd python-library-management-class
 
-Run the Python script / Python betiğini çalıştırın
+## Run the Python script / Python betiğini çalıştırın
 python demo-library.py
 
 
